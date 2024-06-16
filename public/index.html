@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Darun Bjork - Portfolio</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js" defer></script>
+        <script src="js/main.js" defer></script>
+      </head>
+      
+<body>
+    <header>
+    <div class="container"></div>
+  
+        <nav class="navbar">
+            <a href="#" class="logo">Darun Bjork</a>
+            <ul class="navigation-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio. My name is Darun A. Mustafa</h1>
+            <p>I am a <span class="highlight">web developer</span> from Stockholm, Sweden.</p>
+            <p>Discover my projects and learn more about me.</p>
+            <a href="#about" class="button">Learn More</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-card">
+                <img src="Img/Darun.jpeg" alt="Darun Bjork Profile Picture" class="image-slide" width="300" height="280">
+                <div class="about-info">
+                    <ul>
+                        <li><span class="skills">Frontend</span> development</li>
+                        <li><span class="skills">Backend</span> development</li>
+                        <li><span class="skills">Test-driven</span> development</li>
+                        <li><span class="skills">Climbing</span></li>
+                    </ul>
+                    <h3>Skills and Experience</h3>
+                    <table>
+                        <tr>
+                            <th>Skills</th>
+                            <th>Years of Experience</th>
+                            <th>Level of Expertise</th>
+                        </tr>
+                        <tr>
+                            <td>HTML</td>
+                            <td>1</td>
+                            <td>Advanced</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>1</td>
+                            <td>Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>1</td>
+                            <td>Beginner</td>
+                        </tr>
+                    </table>
+                    <a href="files/cv.pdf" download target="_blank" class="button">Download my CV</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="grid">
+              <div class="grid-item">
+                <h2>Movie Backend API</h2>
+                <div class="image-container">
+                  <img src="Img/generated image.png.webp" alt="myFlix API - Backend Service" class="image-slide" width="300" height="300">
+                </div>
+                <p>A backend service for a movie app using Node.js, Express, and MongoDB, enabling user authentication, profile management, and movie data retrieval.</p>
+                <a href="https://github.com/darunbjork/movie_api" target="_blank">See the project on Github</a>
+              </div>
+              <div class="grid-item">
+                <h2>myFlix Angular Client</h2>
+                <div class="image-container">
+                  <img src="Img/Angular image.png" alt="myFlix Angular Client" class="image-slide" width="300" height="300">
+                </div>
+                <p>An Angular-based frontend for the myFlix movie app, featuring dynamic movie data display, user authentication, and profile management.</p>
+                <a href="https://github.com/darunbjork/myFlix-Angular-client" target="_blank">See the project on Github</a>
+              </div>
+              <div class="grid-item">
+                <h2>myFlix React Client</h2>
+                <div class="image-container">
+                  <img src="Img/React Image.png" alt="myFlix Client" class="image-slide" width="300" height="300">
+                </div>
+                <p>Dive into React-driven cinematic exploration with this frontend application. It features dynamic movie data display and user authentication.</p>
+                <a href="https://github.com/darunbjork/myFlix-client" target="_blank">See the project on Github</a>
+              </div>
+              <div class="grid-item">
+                <h2>Simple Web Application</h2>
+                <div class="image-container">
+                  <img src="Img/Pokedex Image.png" alt="Simple Web Application" class="image-slide" width="300" height="300">
+                </div>
+                <p>This is a simple web application built with HTML, CSS, and JavaScript, allowing users to interact with Pokémon characters by clicking buttons. This project marked my initial foray into JavaScript development, presenting challenges in structuring and functionality.</p>
+                <a href="https://darunbjork.github.io/Pokedex/" target="_blank">See the project</a>
+              </div>
+              <div class="grid-item">
+                <h2>Meet Web Application</h2>
+                <div class="image-container">
+                  <img src="Img/Meet App Image.png" alt="Meet Web App" class="image-slide" width="300" height="300">
+                </div>
+                <p>Designed a web app using React.js for frontend, focusing on user-friendly event management.</p>
+                <a href="https://darunbjork.github.io/meet/" target="_blank">See the project on GitHub</a>
+              </div>
+              <div class="grid-item">
+                <h2>Real-time Chat Application</h2>
+                <div class="image-container">
+                  <img src="Img/React Native.png" alt="Real-time Chat Application" class="image-slide" width="300" height="300">
+                </div>
+                <p>Built a real-time chat application using Node.js, Express, and WebSocket, enabling users to communicate instantaneously with minimal latency.</p>
+                <a href="https://github.com/darunbjork/chat-app" target="_blank">See the project on Github</a>
+              </div>
+              <div class="grid-item">
+                <h2>Personal Portfolio Website</h2>
+                <div class="image-container">
+                  <img src="Img/portfolio portrait.png" alt="Personal Portfolio Website" class="image-slide" width="300" height="300">
+                </div>
+                <p>Created a personal portfolio website showcasing my work and skills using HTML, CSS, and JavaScript.</p>
+                <a href="https://dev-portfolio-projects.netlify.app" target="_blank">See the project</a>
+              </div>
+            </div>
+          </section>
+          
+          
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="profile">
+                <p>Reach out to me via the links below:</p>
+                <a href="mailto:darunbjork@gmail.com">darunbjork@gmail.com</a><br>
+                <a href="tel:+46793007395">Telephone: +46 (079) 300 73 95</a><br>
+                <a href="https://join.skype.com/invite/GOJ9FbGiW8eO">Call me on Skype</a>
+            </div>
+        </section>
+        
+        <div class="footer-content">
+            <p>Find me on:</p>
+            <div class="social-media">
+                <a href="https://github.com/darunbjork" target="_blank">
+                    <img src="Img/211904_social_github_icon-2.svg" alt="Github">
+                </a>
+                <a href="https://x.com/darunbjork" target="_blank">
+                    <img src="Img/icons8-twitter.svg" alt="Twitter">
+                </a>
+                <a href="https://www.linkedin.com/in/darun-bj%C3%B6rk-b019b01b2/" target="_blank">
+                    <img src="Img/206854_socialnetwork_linkedin_social_icon.svg" alt="Linkedin">
+                </a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 My Portfolio</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        // GSAP and ScrollMagic Animations
+        document.addEventListener("DOMContentLoaded", function() {
+            gsap.from(".hero-content", { duration: 2, opacity: 0, y: 50, ease: "power2.out" });
+            gsap.from(".about-card", { duration: 2, opacity: 0, x: -50, scrollTrigger: ".about-card" });
+            gsap.from(".grid-item", { duration: 2, opacity: 0, y: 50, stagger: 0.3, scrollTrigger: ".grid-item" });
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

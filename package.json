@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "An advanced single-page portfolio with animations",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Darun Bjork",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "gsap": "^3.12.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.3"
+  }
+}
