@@ -1,6 +1,7 @@
 # Portfolio
 
-click on daruntechportfolio.netlify.app
+click on https://main--daruntechportfolio.netlify.app
+
 An advanced single-page portfolio with animations, built with HTML, CSS, JavaScript, and Node.js. This project showcases my work and skills as a web developer.
 
 ## Table of Contents
