@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "build:temp": "mkdir -p temp && cp -R !('public'|'temp') temp/",
+    "build:temp": "mkdir -p temp && rsync -av --progress --exclude 'public' --exclude 'temp' ./ temp",
     "build": "npm run build:temp && mkdir -p public && cp -R temp/* public/ && rm -rf temp"
   },
   "keywords": [],
