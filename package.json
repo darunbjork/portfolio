@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "build": "mkdir -p public && cp -R * public/"
+    "build:temp": "mkdir -p temp && cp -R !('public'|'temp') temp/",
+    "build": "npm run build:temp && mkdir -p public && cp -R temp/* public/ && rm -rf temp"
   },
   "keywords": [],
   "author": "Darun Bjork",
