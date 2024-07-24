@@ -5,197 +5,188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darun Bjork - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="js/main.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="#" class="logo">Darun Bjork</a>
-            <ul class="navigation-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#technologies">Technologies</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Welcome to My Portfolio. My name is Darun A. Mustafa</h1>
-            <p>I am a <span class="highlight">web developer</span> from Stockholm, Sweden.</p>
-            <p>Discover my projects and learn more about me.</p>
-            <a href="#about" class="button">Learn More</a>
-        </div>
-    </section>
-
+        <header>
+            <nav class="navbar">
+                <a href="#" class="logo">Darun Bjork</a>
+                <ul class="navigation-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#my-projects">Projects</a></li>
+                    <li><a href="#technologies">Technologies</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-intro">
+                    <h1>Hello, welcome to my portfolio, I'm</h1>
+                    <h2>Darun A. Mustafa</h2>
+                    <p class="sliding-text-container">
+                        <span class="static-text">I'm a </span>
+                        <span class="sliding-text">Web Developer</span>
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="Resume.pdf/Darun%20Björk's%20Resume.pdf" download target="_blank" class="button">Download CV</a>
+                        <a href="#about" class="button">About Me</a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <img src="Img/971.jpg" alt="Darun A. Mustafa" class="hero-image">
+                </div>
+            </div>
+        </section>
     <main>
         <section id="about">
             <h2>About Me</h2>
             <div class="about-card">
-                <img src="Img/Darun.jpeg" alt="Darun Bjork Profile Picture" class="image-slide" width="300" height="280">
+                <div class="image-container">
+                    <img src="Img/Darun.jpeg" alt="Darun Bjork Profile Picture" class="profile-image">
+                </div>
                 <div class="about-info">
-                    <ul>
-                        <li><span class="skills">Frontend</span> development</li>
-                        <li><span class="skills">Backend</span> development</li>
-                        <li><span class="skills">Test-driven</span> development</li>
-                        <li><span class="skills">Climbing</span></li>
-                    </ul>
-                    <h3>Skills and Experience</h3>
-                    <table>
-                        <tr>
-                            <th>Skills</th>
-                            <th>Years of Experience</th>
-                            <th>Level of Expertise</th>
-                        </tr>
-                        <tr>
-                            <td>HTML</td>
-                            <td>1</td>
-                            <td>Advanced</td>
-                        </tr>
-                        <tr>
-                            <td>CSS</td>
-                            <td>1</td>
-                            <td>Intermediate</td>
-                        </tr>
-                        <tr>
-                            <td>JavaScript</td>
-                            <td>1</td>
-                            <td>Beginner</td>
-                        </tr>
-                    </table>
-                    <a href="Resume.pdf/Darun%20Björk's%20Resume.pdf" download target="_blank" class="button">Download my CV</a>
+                    <p>Hello! I'm Darun A. Mustafa, a web developer based in Stockholm, Sweden. <br>I specialize in frontend and backend development, creating dynamic and responsive web applications.</p>
+                    <p>In my free time, I enjoy listening to music while programming, as it helps me stay focused and creative. I also love taking long walks, which gives me the opportunity to clear my mind and come up with new ideas. I am passionate about learning and continuously studying to improve my skills and knowledge in the tech industry.</p>
+                    <p>I will soon start a four-year program in Technology, which will further enhance my expertise and open up new opportunities for innovation. My goal is to merge my love for technology with my continuous learning journey, aiming to create impactful and efficient solutions.</p>
+                    <a href="#my-projects" class="button">Click to see projects</a>
                 </div>
-            </div>
-        </section>
-
-        <section id="technologies">
-            <h2>Technologies</h2>
-            <div class="tech-section">
-                <div class="tech-column">
-                    <h3>Backend</h3>
-                    <ul>
-                        <li class="slide-in">Node.js</li>
-                        <li class="slide-in">Express</li>
-                        <li class="slide-in">MongoDB</li>
-                        <li class="slide-in">Mongoose</li>
-                    </ul>
-                </div>
-                <div class="tech-column">
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li class="slide-in">HTML</li>
-                        <li class="slide-in">CSS</li>
-                        <li class="slide-in">JavaScript (Vanilla JS and React)</li>
-                        <li class="slide-in">jQuery</li>
-                        <li class="slide-in">Bootstrap</li>
-                        <li class="slide-in">SCSS</li>
-                        <li class="slide-in">Parcel</li>
-                        <li class="slide-in">Angular</li>
-                    </ul>
-                </div>
-                <div class="tech-column">
-                    <h3>Cloud Services</h3>
-                    <ul>
-                        <li class="slide-in">Heroku</li>
-                        <li class="slide-in">Netlify</li>
-                        <li class="slide-in">AWS Lambda</li>
-                        <li class="slide-in">Firebase (Firestore, Cloud Storage)</li>
-                        <li class="slide-in">Expo</li>
-                    </ul>
-                </div>
-                <div class="tech-column">
-                    <h3>Libraries</h3>
-                    <ul>
-                        <li class="slide-in">Passport.js (JWT)</li>
-                        <li class="slide-in">bcrypt</li>
-                        <li class="slide-in">express-validator</li>
-                        <li class="slide-in">CORS</li>
-                        <li class="slide-in">Promise polyfill</li>
-                        <li class="slide-in">Fetch polyfill</li>
-                        <li class="slide-in">Gifted Chat</li>
-                        <li class="slide-in">AsyncStorage</li>
-                    </ul>
+                <div class="image-container">
+                    <img src="Img/photo.webp" alt="Walking in Forest" class="animated-image">
                 </div>
             </div>
         </section>
         
-
-        
-        <section id="projects">
+        <section id="my-projects">
             <h2>My Projects</h2>
-            <div class="grid">
-                <div class="grid-item">
+            <div class="my-grid">
+                <div class="my-grid-item">
                     <h2>Movie Backend API</h2>
-                    <div class="image-container">
+                    <div class="my-image-container">
                         <img src="Img/generated image.png.webp" alt="myFlix API - Backend Service" class="image-slide">
                     </div>
                     <p>A backend service for a movie app using Node.js, Express, and MongoDB, enabling user authentication, profile management, and movie data retrieval.</p>
                     <a href="https://github.com/darunbjork/movie_api" target="_blank">See the project on Github</a>
+                    <a href="https://example.com/movie_api_demo" target="_blank">No Live Demo</a>
                 </div>
-                <div class="grid-item">
+                <div class="my-grid-item">
                     <h2>myFlix Angular Client</h2>
-                    <div class="image-container">
+                    <div class="my-image-container">
                         <img src="Img/Angular image.png" alt="myFlix Angular Client" class="image-slide">
                     </div>
                     <p>An Angular-based frontend for the myFlix movie app, featuring dynamic movie data display, user authentication, and profile management.</p>
                     <a href="https://github.com/darunbjork/myFlix-Angular-client" target="_blank">See the project on Github</a>
+                    <a href="https://cinemahub22.netlify.app" target="_blank">Live Demo</a>
                 </div>
-                <div class="grid-item">
+                <div class="my-grid-item">
                     <h2>myFlix React Client</h2>
-                    <div class="image-container">
+                    <div class="my-image-container">
                         <img src="Img/React Image.png" alt="myFlix Client" class="image-slide">
                     </div>
                     <p>Dive into React-driven cinematic exploration with this frontend application. It features dynamic movie data display and user authentication.</p>
                     <a href="https://github.com/darunbjork/myFlix-client" target="_blank">See the project on Github</a>
+                    <a href="https://flix-movie-hub.netlify.app" target="_blank">Live Demo</a>
                 </div>
-                <div class="grid-item">
+                <div class="my-grid-item">
                     <h2>Simple Web Application</h2>
-                    <div class="image-container">
+                    <div class="my-image-container">
                         <img src="Img/Pokedex Image.png" alt="Simple Web Application" class="image-slide">
                     </div>
                     <p>This is a simple web application built with HTML, CSS, and JavaScript, allowing users to interact with Pokémon characters by clicking buttons. This project marked my initial foray into JavaScript development, presenting challenges in structuring and functionality.</p>
                     <a href="https://github.com/darunbjork/Pokedex" target="_blank">See the project on GitHub</a>
+                    <a href="https://darunbjork.github.io/Pokedex/" target="_blank">Live Demo</a>
                 </div>
-                <div class="grid-item">
+                <div class="my-grid-item">
                     <h2>Meet Web Application</h2>
-                    <div class="image-container">
+                    <div class="my-image-container">
                         <img src="Img/Meet App Image.png" alt="Meet Web App" class="image-slide">
                     </div>
                     <p>Designed a web app using React.js for frontend, focusing on user-friendly event management.</p>
-                    <a href="https://darunbjork.github.io/meet/" target="_blank">See the project on GitHub</a>
+                    <a href="https://github.com/darunbjork/meet" target="_blank">See the project on GitHub</a>
+                    <a href="https://darunbjork.github.io/meet/" target="_blank">Live Demo</a>
                 </div>
-                <div class="grid-item">
+                <div class="my-grid-item">
                     <h2>Real-time Chat Application</h2>
-                    <div class="image-container">
+                    <div class="my-image-container">
                         <img src="Img/React Native.png" alt="Real-time Chat Application" class="image-slide">
                     </div>
                     <p>Built a real-time chat application using Node.js, Express, and WebSocket, enabling users to communicate instantaneously with minimal latency.</p>
                     <a href="https://github.com/darunbjork/chat-app" target="_blank">See the project on Github</a>
+                    <a href="https://example.com/chat_app_demo" target="_blank">No Live Demo</a>
                 </div>
-                <div class="grid-item">
+                <div class="my-grid-item">
                     <h2>Portfolio Website</h2>
-                    <div class="image-container">
+                    <div class="my-image-container">
                         <img src="Img/Portfolio Home page.png" alt="Personal Portfolio Website" class="image-slide">
                     </div>
                     <p>Created a personal portfolio website showcasing my work and skills using HTML, CSS, and JavaScript.</p>
                     <a href="https://github.com/darunbjork/portfolio" target="_blank">See the project on Github</a>
+                    <a href="https://main--daruntechportfolio.netlify.app" target="_blank">Live Demo</a>
                 </div>
-                <div class="grid-item">
+                <div class="my-grid-item">
                     <h2>To-Do List Application</h2>
-                    <div class="image-container">
+                    <div class="my-image-container">
                         <img src="Img/To-do-list.webp" alt="To-Do List App" class="image-slide">
                     </div>
                     <p>A simple to-do list app built with HTML, CSS, and JavaScript, allowing users to manage their tasks efficiently. This application features adding, crossing out, deleting, and reordering tasks with a user-friendly interface.</p>
                     <a href="https://github.com/darunbjork/to-do-list-app" target="_blank">See the project on GitHub</a>
+                    <a href="https://example.com/todo_demo" target="_blank">No Live Demo</a>
                 </div>
-                
             </div>
         </section>
         
-          
-          <section id="contact">
+        <section id="technologies">
+            <h1>Technologies</h1>
+            <h2>Toolbelt</h2>
+            <div class="tools-slider">
+                <div class="tools-slide-track">
+                    <div class="tool"><img src="icons/html-.png" alt="HTML"></div>
+                    <div class="tool"><img src="icons/css-.png" alt="CSS"></div>
+                    <div class="tool"><img src="icons/python.png" alt="Python"></div>
+                    <div class="tool"><img src="icons/javascript.png" alt="javascript"></div>
+                    <div class="tool"><img src="icons/Bootstrap-.png" alt="BootStrap"></div>
+                    <div class="tool"><img src="icons/react-.png" alt="React"></div>
+                    <div class="tool"><img src="icons/node-js.png" alt="Node.js"></div>
+                    <div class="tool"><img src="icons/Postman.png" alt="Postman"></div>
+                    <div class="tool"><img src="icons/Angular.png" alt="Angular"></div>
+                    <div class="tool"><img src="icons/vuejs-png.png" alt="Vues"></div>
+                    <div class="tool"><img src="icons/aws.png" alt="AWS"></div>
+                    <div class="tool"><img src="icons/Firebase.png" alt="Firebase"></div>
+                    <div class="tool"><img src="icons/Heroku.png" alt="Heroku"></div>
+                    <div class="tool"><img src="icons/netlify..png" alt="netlify"></div>
+                    <div class="tool"><img src="icons/typescript-png.png" alt="TypeScript"></div>
+                    <div class="tool"><img src="icons/github-.png" alt="github"></div>
+                    <div class="tool"><img src="icons/mongodb.png" alt="MongoDB"></div>
+                    <div class="tool"><img src="icons/postgresql-.png" alt="postgresql"></div>
+                    <div class="tool"><img src="icons/mysql-.png" alt="mysql-"></div>
+                    <!-- Repeat logos for continuous scrolling -->
+                    <div class="tool"><img src="icons/html-.png" alt="HTML"></div>
+                    <div class="tool"><img src="icons/css-.png" alt="CSS"></div>
+                    <div class="tool"><img src="icons/python.png" alt="Python"></div>
+                    <div class="tool"><img src="icons/javascript.png" alt="javascript"></div>
+                    <div class="tool"><img src="icons/Bootstrap-.png" alt="BootStrap"></div>
+                    <div class="tool"><img src="icons/react-.png" alt="React"></div>
+                    <div class="tool"><img src="icons/node-js.png" alt="Node.js"></div>
+                    <div class="tool"><img src="icons/Postman.png" alt="Postman"></div>
+                    <div class="tool"><img src="icons/Angular.png" alt="Angular"></div>
+                    <div class="tool"><img src="icons/vuejs-png.png" alt="Vues"></div>
+                    <div class="tool"><img src="icons/aws.png" alt="AWS"></div>
+                    <div class="tool"><img src="icons/Firebase.png" alt="Firebase"></div>
+                    <div class="tool"><img src="icons/Heroku.png" alt="Heroku"></div>
+                    <div class="tool"><img src="icons/netlify..png" alt="netlify"></div>
+                    <div class="tool"><img src="icons/typescript-png.png" alt="TypeScript"></div>
+                    <div class="tool"><img src="icons/github-.png" alt="github"></div>
+                    <div class="tool"><img src="icons/mongodb.png" alt="MongoDB"></div>
+                    <div class="tool"><img src="icons/postgresql-.png" alt="postgresql"></div>
+                    <div class="tool"><img src="icons/mysql-.png" alt="mysql-"></div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
             <h2>Contact</h2>
             <div class="profile">
                 <p>Reach out to me via the links below:</p>
@@ -205,24 +196,26 @@
             </div>
         </section>
         
-        <div class="footer-content">
-            <p>Find me on:</p>
-            <div class="social-media">
-                <a href="https://github.com/darunbjork" target="_blank">
-                    <img src="Img/211904_social_github_icon-2.svg" alt="Github">
-                </a>
-                <a href="https://x.com/darunbjork" target="_blank">
-                    <img src="Img/icons8-twitter.svg" alt="Twitter">
-                </a>
-                <a href="https://www.linkedin.com/in/darun-bj%C3%B6rk-b019b01b2/" target="_blank">
-                    <img src="Img/206854_socialnetwork_linkedin_social_icon.svg" alt="Linkedin">
-                </a>
+
+        <footer>
+            <div class="footer-content">
+                <p>Find me on:</p>
+                <div class="social-media">
+                    <a href="https://github.com/darunbjork" target="_blank" class="github">
+                        <img src="Img/211904_social_github_icon-2.svg" alt="Github">
+                    </a>
+                    <a href="https://x.com/darunbjork" target="_blank" class="twitter">
+                        <img src="Img/icons8-twitter.svg" alt="Twitter">
+                    </a>
+                    <a href="https://www.linkedin.com/in/darun-bj%C3%B6rk-b019b01b2/" target="_blank" class="linkedin">
+                        <img src="Img/206854_socialnetwork_linkedin_social_icon.svg" alt="Linkedin">
+                    </a>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 My Portfolio</p>
+                </div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2024 My Portfolio</p>
-            </div>
-        </div>
-        
+        </footer>
     </main>
     <button id="scroll-to-top"></button>
     <script src="js/main.js"></script>
