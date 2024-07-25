@@ -527,7 +527,18 @@ body {
   text-decoration: none;
 }
 
-/* Contact Section Styles */
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #3498db;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Contact & Connect Section Styles */
 #contact {
   padding: 60px 30px;
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
@@ -561,112 +572,101 @@ body {
   bottom: -10px;
 }
 
-.profile p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
-  color: #b2bec3;
+.contact-card {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.profile a {
-  display: inline-block;
-  margin-bottom: 10px;
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-button {
+  background: #3498db;
+  color: #ecf0f1;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.contact-button:hover {
+  background: #2980b9;
+  transform: scale(1.1);
+}
+
+.contact-details {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contact-details a {
+  display: block;
+  margin: 10px 0;
   color: #3498db;
   font-size: 1.1em;
   text-decoration: none;
-  position: relative;
   transition: color 0.3s;
 }
 
-.profile a::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #3498db;
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: all 0.3s ease-in-out;
-}
-
-.profile a:hover::before {
-  visibility: visible;
-  transform: scaleX(1);
-}
-
-.profile a:hover {
+.contact-details a:hover {
   color: #2980b9;
 }
 
-.profile a:hover::before {
-  background-color: #2980b9;
+.contact-details i {
+  margin-right: 10px;
 }
 
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-media a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.social-media a:hover img {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
 
 /* Footer Styles */
 .footer-content {
-
-  background: #cac3c3;
+  background: #2c3e50;
   padding: 20px;
   text-align: center;
 }
 
 .footer-content p {
   margin: 10px 0;
-}
-
-.footer-content .social-media {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
-}
-
-.footer-content .social-media a {
-  display: inline-block;
-  margin: 0 10px;
-  position: relative;
-}
-
-.footer-content .social-media a img {
-  width: 40px;
-  height: 40px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  border-radius: 50%;
-}
-
-.footer-content .social-media a.github img {
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-}
-
-.footer-content .social-media a.twitter img {
-  box-shadow: 0 0 20px rgba(29, 161, 242, 0.6);
-}
-
-.footer-content .social-media a.linkedin img {
-  box-shadow: 0 0 20px rgba(0, 119, 181, 0.6);
-}
-
-.footer-content .social-media a:hover img {
-  transform: scale(1.2);
-}
-
-.footer-content .social-media a:hover.github img {
-  box-shadow: 0 0 30px rgb(138, 99, 8);
-}
-
-.footer-content .social-media a:hover.twitter img {
-  box-shadow: 0 0 30px rgb(138, 99, 8);
-}
-
-.footer-content .social-media a:hover.linkedin img {
-  box-shadow: 0 0 30px rgb(138, 99, 8);
+  color: #ecf0f1;
 }
 
 .footer-content .copyright {
   font-size: 0.9em;
-  color: #000000;
+  color: #bdc3c7;
 }
 
 /* Scroll-to-Top Button */
@@ -698,6 +698,90 @@ body {
   content: '\25B2'; 
   font-size: 20px;
 }
+
+/* Button Animation */
+.contact-button {
+  position: relative;
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #7d2ae8;
+  transition: all 0.2s ease;
+}
+.contact-button:active {
+  transform: scale(0.96);
+}
+.contact-button:before,
+.contact-button:after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+.contact-button.animate::before {
+  top: -70%;
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  animation: greentopBubbles ease-in-out 0.6s forwards infinite;
+}
+@keyframes greentopBubbles {
+  0% {
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+.contact-button.animate::after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  animation: greenbottomBubbles ease-in-out 0.6s forwards infinite;
+}
+@keyframes greenbottomBubbles {
+  0% {
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+  50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+  100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
 
 /* Media Queries */
 @media (max-width: 768px) {

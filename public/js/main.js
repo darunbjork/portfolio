@@ -51,3 +51,13 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+document.getElementById('contact-button').onclick = function() {
+    var contactDetails = document.getElementById('contact-details');
+    contactDetails.style.display = contactDetails.style.display === 'flex' ? 'none' : 'flex';
+    this.classList.add('animate');
+    setTimeout(() => {
+        this.classList.remove('animate');
+    }, 600);
+}
+
