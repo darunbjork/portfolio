@@ -263,7 +263,7 @@ body {
 
 .profile-image {
   border-radius: 50%;
-  width: 330px;
+  width: 350px;
   height: auto; 
   object-fit: cover;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
@@ -306,7 +306,7 @@ body {
 
 .animated-image {
   border-radius: 15px;
-  width: 300px;
+  width: 350px;
   height: auto; 
   object-fit: cover;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
